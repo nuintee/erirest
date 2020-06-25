@@ -2,6 +2,7 @@
    margin: 0;
    height: 100%;
    width: 100%;
+   touch-action: manipulation;
  }
 body{
   background-color: #101010;
