@@ -9,6 +9,7 @@ body{
   margin: 0;
   height: 100%;
   width: 100%;
+  font-family: arial;
 
 }
 
@@ -101,7 +102,7 @@ header ul li img{
   font-family: arial;
   font-weight: bold;
   cursor: pointer;
-}#orderButton:active{
+}#orderButton:active,#orderButton:hover{
   border:none;
   height: 45vh;
   width: 45vh;
