@@ -1,0 +1,109 @@
+ html{
+   margin: 0;
+   height: 100%;
+   width: 100%;
+ }
+body{
+  background-color: #101010;
+  color: #FFF;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+
+}
+
+header{
+  position: relative;
+  top: 2.5%;
+  font-size: 2vh;
+}
+
+header ul{
+  list-style: none;
+  margin: 0;
+}
+
+header ul li{
+  display: inline-block;
+  margin: 0 20px;
+}
+
+header ul li img{
+  vertical-align: middle;
+  height: 2em;
+  width: 2em;
+}
+
+.button_wrapper{
+  position: relative;
+  top: 50%;
+  transform: translateY(-100%);
+  margin: 0;
+  padding: 0;
+}
+
+.button_wrapper ul{
+  text-align: center;
+  list-style: none;
+}
+
+
+
+.selectButton{
+  height: 10vh;
+  width: 40%;
+  cursor: pointer;
+  font-size: 2vh;
+  background-color: #1e1e1e;
+  outline: none;
+  border: none;
+  border-radius: 1em;
+  color:#FFF;
+  margin: 20px;
+  text-align: center;
+}
+
+
+.selectButton::before{
+  content:"";
+  display: inline-block;/*忘れずに！*/
+  width: 3vh;/*画像の幅*/
+  height: 3vh;/*画像の高さ*/
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin: 0 1vh;
+}
+
+#serverSel::before{
+  background-image: url(serv.png);
+}
+
+#clientSel::before{
+  background-image: url(cli.png);
+  background-position: center;
+}
+
+/**Order Button**/
+#orderButton{
+  height: 50vh;
+  width: 50vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 4vh solid #5EBDD1;
+  border-radius: 3vh;
+  background-color:#62D1E8;
+  color:#FFF;
+  outline: none;
+  font-size: 5vh;
+  font-family: arial;
+  font-weight: bold;
+  cursor: pointer;
+}#orderButton:active{
+  border:none;
+  height: 45vh;
+  width: 45vh;
+  font-size: 4vh;
+}

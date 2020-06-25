@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>セレクション</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- アドレスバー等のブラウザのUIを非表示 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- default（Safariと同じ） / black（黒） / black-translucent（ステータスバーをコンテンツに含める） -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- ホーム画面に表示されるアプリ名 -->
+    <meta name="apple-mobile-web-app-title" content="レストラン">
+    <!-- ホーム画面に表示されるアプリアイコン -->
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><img src="logo.png"></li>
+        <li><p>エリのレストラン</p></li>
+        <li>|</li>
+        <li id = "selection-nav">セレクション</li>
+      </ul>
+    </header>
+    <div class="button_wrapper">
+      <ul>
+        <li><button class = "selectButton" id ="serverSel" type="button" name="serverButton" onclick="location.href='server.html'">店員</button></li>
+        <li><button class = "selectButton" id = "clientSel" type="button" name="clientButton" onclick="location.href='client.html'">客</button></li>
+      </ul>
+    </div>
+
+
+  </body>
+</html>
