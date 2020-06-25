@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header>
+      <ul>
+        <li><a href = "index.html"><img src="logo.png"></a></li>
+        <li><p>エリのレストラン</p></li>
+        <li>|</li>
+        <li id = "selection-nav">オーダーハンディ</li>
+      </ul>
+    </header>
+
+    <div class="genreNav">
+      <ul>
+        <li>食事</li>
+        <li>軽食</li>
+        <li>スープ</li>
+        <li>飲み物</li>
+        <li>スイーツ</li>
+        <li>サービス</li>
+      </ul>
+    </div>
+    <div class="contents">
+      <div class= "meal-item">
+        <img class = "food-image" src="serv.png" alt="">
+        <p class = "food-name">チーズ唐揚げ</p>
+        <p class = "food-price">200円</p>
+        <button class = "addToCartButton"type="button" name="menu-01"></button>
+      </div>
+    </div>
+    <div id ="bar" class="slide-up-menu" onclick=slideup();>
+      <p>注文</p>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

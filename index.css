@@ -10,6 +10,7 @@ body{
   height: 100%;
   width: 100%;
   font-family: arial;
+  overflow: hidden;
 
 }
 
@@ -102,9 +103,116 @@ header ul li img{
   font-family: arial;
   font-weight: bold;
   cursor: pointer;
-}#orderButton:active,#orderButton:hover{
+}#orderButton:active{
   border:none;
   height: 45vh;
   width: 45vh;
   font-size: 4vh;
 }
+
+/**Order Handy**/
+.genreNav ul{
+  position: relative;
+  top:3vh;
+  list-style: none;
+}
+
+.genreNav ul li{
+  color:#AFAFAF;
+  font-size: 2vh;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.contents{
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  top: 10vh;
+}
+
+.meal-item{
+  background-color: #1e1e1e;
+  height: 25vw;
+  width: 25vw;
+  margin: 30px;
+  display: inline-block;
+  border-radius: 2vh;
+  position: relative;
+  top: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.food-image{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 5em;
+  width: 5em;
+}
+
+.food-name{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  color:#FFF;
+  font-size: 2em;
+  margin: 0;
+}
+
+.food-price{
+  display: block;
+  position: relative;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  color:#707070;
+  font-size: 2em;
+  margin: 0;
+}
+
+.addToCartButton{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height:6rem;
+  width: 6rem;
+  border-radius: 100%;
+  transform: translate(25%,25%);
+  border: none;
+  outline:none;
+  background-color: #62D1E8;
+  background-image:url("plus.png");
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center;
+  cursor: pointer;
+}
+
+.slide-up-menu{
+  position: absolute;
+  bottom: 0;
+  transform: translateY(85%);
+  background-color: #1E1E1E;
+  height:50%;
+  width: 100%;
+  border-radius: 2vh 2vh 0 0;
+  animation: 1s slide-up-anim ease;
+  transition-duration: 1s ease-in;
+}
+
+/** @keyframes slide-up-anim {
+
+  0%{
+    transform: translateY(0);
+  }
+
+  100%{
+    transform: translateY(-100%);
+  }
+
+} **/
