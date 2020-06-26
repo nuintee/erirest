@@ -17,3 +17,7 @@ function slideup(){
     bar.style.transform = "translateY(-25%)";
   }
 }
+
+function ATC(e){
+  console.log("atf");
+}

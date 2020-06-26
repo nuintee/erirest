@@ -11,8 +11,6 @@ body{
   height: 100%;
   width: 100%;
   font-family: arial;
-  overflow: hidden;
-
 }
 
 header{
@@ -123,6 +121,11 @@ header ul li img{
   font-size: 2vh;
   display: inline-block;
   margin: 0 20px;
+}
+
+.genreEachNav.active{
+  color: #FFF;
+  font-weight: bold;
 }
 
 .contents{

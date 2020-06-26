@@ -17,23 +17,99 @@
 
     <div class="genreNav">
       <ul>
-        <li>食事</li>
-        <li>軽食</li>
-        <li>スープ</li>
-        <li>飲み物</li>
-        <li>スイーツ</li>
-        <li>サービス</li>
+        <li class="genreEachNav active">食事</li>
+        <li class="genreEachNav">軽食</li>
+        <li class="genreEachNav">スープ</li>
+        <li class="genreEachNav">飲み物</li>
+        <li class="genreEachNav">スイーツ</li>
+        <li class="genreEachNav">サービス</li>
       </ul>
     </div>
     <div class="contents">
-      <div class= "meal-item">
-        <img class = "food-image" src="serv.png" alt="">
-        <p class = "food-name">チーズ唐揚げ</p>
-        <p class = "food-price">200円</p>
-        <button class = "addToCartButton"type="button" name="menu-01"></button>
+      <div class="index-01" style="display:block">
+        <div id ="menu-01" class= "meal-item">
+          <img class = "food-image" src="./images/chicken&chese.png" alt="">
+          <p class = "food-name">チーズ唐揚げ</p>
+          <p class = "food-price">500円</p>
+          <button class = "addToCartButton"type="button" name="menu-01" onclick="ATC(ref);"></button>
+        </div>
+        <div id ="menu-02" class= "meal-item">
+          <img class = "food-image" src="./images/hamburg-steak.png" alt="">
+          <p class = "food-name">ハンバーグ</p>
+          <p class = "food-price">1000円</p>
+          <button class = "addToCartButton"type="button" name="menu-01" onclick="ATC(ref);"></button>
+        </div>
+        <div id ="menu-03" class= "meal-item">
+          <img class = "food-image" src="./images/fish.png" alt="">
+          <p class = "food-name">魚</p>
+          <p class = "food-price">500円</p>
+          <button class = "addToCartButton"type="button" name="menu-01" onclick="ATC(ref);"></button>
+        </div>
+      </div>
+      <div class="index-02" style="display:none">
+        <div id ="menu-01" class= "meal-item">
+          <img class = "food-image" src="./images/toast&egg.png" alt="">
+          <p class = "food-name">トースト(卵)</p>
+          <p class = "food-price">200円</p>
+          <button class = "addToCartButton"type="button" name="menu-02"></button>
+        </div>
+        <div id ="menu-02" class= "meal-item">
+          <img class = "food-image" src="./images/rice.png" alt="">
+          <p class = "food-name">米</p>
+          <p class = "food-price">10円</p>
+          <button class = "addToCartButton"type="button" name="menu-02"></button>
+        </div>
+        <div id ="menu-03" class= "meal-item">
+          <img class = "food-image" src="./images/natto.png" alt="">
+          <p class = "food-name">納豆</p>
+          <p class = "food-price">100円</p>
+          <button class = "addToCartButton"type="button" name="menu-02"></button>
+        </div>
+      </div>
+      <div class="index-03" style="display:none">
+        <div id ="menu-01" class= "meal-item">
+          <img class = "food-image" src="./images/soup(s).png" alt="">
+          <p class = "food-name">ホウレンソウ</p>
+          <p class = "food-price">100円</p>
+          <button class = "addToCartButton"type="button" name="menu-02"></button>
+        </div>
+        <div id ="menu-02" class= "meal-item">
+          <img class = "food-image" src="./images/soup(m).png" alt="">
+          <p class = "food-name">キノコ</p>
+          <p class = "food-price">100円</p>
+          <button class = "addToCartButton"type="button" name="menu-02"></button>
+        </div>
+      </div>
+      <div class="index-04" style="display:none">
+        <div id ="menu-01" class= "meal-item">
+          <img class = "food-image" src="./images/coffee.png" alt="">
+          <p class = "food-name">コーヒー</p>
+          <p class = "food-price">100円</p>
+          <button class = "addToCartButton"type="button" name="menu-02"></button>
+        </div>
+        <div id ="menu-02" class= "meal-item">
+          <img class = "food-image" src="./images/water-glass.png" alt="">
+          <p class = "food-name">水</p>
+          <p class = "food-price">0円</p>
+          <button class = "addToCartButton"type="button" name="menu-02"></button>
+        </div>
+      </div>
+      <div class="index-05" style="display:none">
+        <div id ="menu-01" class= "meal-item">
+          <img class = "food-image" src="./images/gummy.png" alt="">
+          <p class = "food-name">グミ</p>
+          <p class = "food-price">10円</p>
+          <button class = "addToCartButton"type="button" name="menu-02"></button>
+        </div>
+        <div id ="menu-02" class= "meal-item">
+          <img class = "food-image" src="./images/milk&cookie.png" alt="">
+          <p class = "food-name">牛乳(クッキー)</p>
+          <p class = "food-price">100円</p>
+          <button class = "addToCartButton"type="button" name="menu-02"></button>
+        </div>
       </div>
     </div>
-    <div id ="bar" class="slide-up-menu" onclick=slideup();>
+    <div id ="bar" class="slide-up-menu" onclick=slideup(); style="display:none">
       <p>注文</p>
     </div>
     <script type="text/javascript" src="index.js"></script>
