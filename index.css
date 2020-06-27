@@ -149,6 +149,8 @@ header ul li img{
   top: 0;
   text-align: center;
   vertical-align: middle;
+}.meal-item:active{
+  border: 1em #FFF solid;
 }
 
 .food-image{
