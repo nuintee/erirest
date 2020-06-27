@@ -14,44 +14,39 @@
         <li id = "selection-nav">オーダーハンディ</li>
       </ul>
     </header>
-
     <div class="genreNav">
       <ul>
-        <li class="genreEachNav active">食事</li>
-        <li class="genreEachNav">軽食</li>
-        <li class="genreEachNav">スープ</li>
-        <li class="genreEachNav">飲み物</li>
-        <li class="genreEachNav">スイーツ</li>
-        <li class="genreEachNav">サービス</li>
+        <li  class="mealTab active" onclick="tabSelection(0);">食事</li>
+        <li  class="lightMealTab" onclick="tabSelection(1);">軽食</li>
+        <li  class="soupTab" onclick="tabSelection(2);">スープ</li>
+        <li  class="drinkTab" onclick="tabSelection(3;">飲み物</li>
+        <li  class="sweets" onclick="tabSelection(4);">スイーツ</li>
+        <li  class="serviceTab" onclick="tabSelection(5);">サービス</li>
       </ul>
     </div>
     <div class="contents">
-      <div class="index-01" style="display:block">
-        <div id ="menu-01" class= "meal-item">
+      <div class="index-1" style="display:block">
+        <div id ="menu-1" class= "meal-item"   onclick="atc(this);" >
           <img class = "food-image" src="./images/chicken&chese.png" alt="">
           <p class = "food-name">チーズ唐揚げ</p>
           <p class = "food-price">500円</p>
-          <button class = "addToCartButton"type="button" name="menu-01" onclick="ATC(ref);"></button>
         </div>
-        <div id ="menu-02" class= "meal-item">
+        <div id ="menu-2" class= "meal-item"  onclick="atc(this);" >
           <img class = "food-image" src="./images/hamburg-steak.png" alt="">
           <p class = "food-name">ハンバーグ</p>
           <p class = "food-price">1000円</p>
-          <button class = "addToCartButton"type="button" name="menu-01" onclick="ATC(ref);"></button>
         </div>
-        <div id ="menu-03" class= "meal-item">
+        <div id ="menu-3" class= "meal-item"  onclick="atc(this);" >
           <img class = "food-image" src="./images/fish.png" alt="">
           <p class = "food-name">魚</p>
           <p class = "food-price">500円</p>
-          <button class = "addToCartButton"type="button" name="menu-01" onclick="ATC(ref);"></button>
         </div>
       </div>
-      <div class="index-02" style="display:none">
+      <div class="index-2" style="display:none">
         <div id ="menu-01" class= "meal-item">
           <img class = "food-image" src="./images/toast&egg.png" alt="">
           <p class = "food-name">トースト(卵)</p>
           <p class = "food-price">200円</p>
-          <button class = "addToCartButton"type="button" name="menu-02"></button>
         </div>
         <div id ="menu-02" class= "meal-item">
           <img class = "food-image" src="./images/rice.png" alt="">
@@ -60,13 +55,13 @@
           <button class = "addToCartButton"type="button" name="menu-02"></button>
         </div>
         <div id ="menu-03" class= "meal-item">
-          <img class = "food-image" src="./images/natto.png" alt="">
+          <img class = "ood-image" src="./images/natto.png" alt="">
           <p class = "food-name">納豆</p>
           <p class = "food-price">100円</p>
           <button class = "addToCartButton"type="button" name="menu-02"></button>
         </div>
       </div>
-      <div class="index-03" style="display:none">
+      <div class="index-3" style="display:none">
         <div id ="menu-01" class= "meal-item">
           <img class = "food-image" src="./images/soup(s).png" alt="">
           <p class = "food-name">ホウレンソウ</p>
@@ -80,7 +75,7 @@
           <button class = "addToCartButton"type="button" name="menu-02"></button>
         </div>
       </div>
-      <div class="index-04" style="display:none">
+      <div class="index-4" style="display:none">
         <div id ="menu-01" class= "meal-item">
           <img class = "food-image" src="./images/coffee.png" alt="">
           <p class = "food-name">コーヒー</p>
@@ -109,9 +104,14 @@
         </div>
       </div>
     </div>
-    <div id ="bar" class="slide-up-menu" onclick=slideup(); style="display:none">
-      <p>注文</p>
+    <div id ="bar" class="slide-up-menu" style="display:block;transform:translateY(80%)">
+      <p id ="orderTxt" onclick="slideup();" >注文</p>
+      <img id ="newIcon" src="newIcon.png" alt="" style="visibility: hidden">
+      <div class="addedItems" id = "addedItems">
+
+      </div>
+      <p id ="sum">合計 200円　<span>確定</span></p>
     </div>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>

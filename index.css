@@ -121,9 +121,11 @@ header ul li img{
   font-size: 2vh;
   display: inline-block;
   margin: 0 20px;
+  cursor: pointer;
+
 }
 
-.genreEachNav.active{
+.genreNav li.active{
   color: #FFF;
   font-weight: bold;
 }
@@ -179,7 +181,7 @@ header ul li img{
   margin: 0;
 }
 
-.addToCartButton{
+.deleteFromCartButton{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -190,7 +192,7 @@ header ul li img{
   border: none;
   outline:none;
   background-color: #62D1E8;
-  background-image:url("plus.png");
+  background-image:url("minus.png");
   background-repeat: no-repeat;
   background-size: 30%;
   background-position: center;
@@ -198,15 +200,49 @@ header ul li img{
 }
 
 .slide-up-menu{
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  transform: translateY(85%);
   background-color: #1E1E1E;
-  height:50%;
+  min-height: 30%;
+  height: auto;
   width: 100%;
   border-radius: 2vh 2vh 0 0;
   animation: 1s slide-up-anim ease;
   transition-duration: 1s ease-in;
+  overflow-y: scroll;
+}
+
+#orderTxt{
+  display: inline-block;
+}
+
+#orderTxt::before{
+  display: inline-block;
+  content:" ";
+  background-image: url("cart.png");
+  background-repeat: no-repeat;
+  background-size: 2.5vh;
+  height:2.5vh;
+  width: 2.5vh;
+  margin: 0 1vh;
+  vertical-align: top;
+}
+
+#newIcon{
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0;
+}
+
+
+#bar{
+  display: inline-block;
+  background-color: #000;
+  text-align: center;
+}
+
+#bar p {
+  font-size: 2vh;
 }
 
 /** @keyframes slide-up-anim {

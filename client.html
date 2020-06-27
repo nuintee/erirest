@@ -22,6 +22,15 @@
       </ul>
     </header>
     <button id = "orderButton" type="button" name="button" onmouseup="orderSound();">12</button>
-    <script type="text/javascript" src="./index.js"></script>
+    <script type="text/javascript">
+      function orderSound(){
+      //let orderButton = document.getElementById('orderButton');
+
+      let sound = new Audio('./pinpon.mp3')
+
+        sound.play();
+
+    }
+    </script>
   </body>
 </html>

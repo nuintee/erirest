@@ -1,0 +1,4 @@
+
+Delete Pluss button from the desing.
+
+Add Delete button inside the bar;
