@@ -1,8 +1,6 @@
 
 let foodPrice = document.getElementsByClassName('food-Price');
 
-foodPrice.value + "円";
-
 function slideup(){
   let bar = document.getElementById('bar');
 
@@ -14,19 +12,20 @@ function slideup(){
 }
 
 function tabSelection(x){
-  let tab = document.getElementsByClassName(this.className);
-  switch (tab) {
-    case x==0:
-    console.log('0');
-      break;
-    case x==1:
-    console.log(1);
-      break;
-    default:
 
-  }
+  let idx1 = document.getElementById('index-1');
+  let idx2 = document.getElementById('index-2');
+  let idx3 = document.getElementById('index-3');
+  let idx4 = document.getElementById('index-4');
+  let idx5 = document.getElementById('index-5');
+  let idx6 = document.getElementById('index-6');
+
+  let idxs = [idx1,idx2,idx3,idx4,idx5,idx6];
+
+
+
+  idx1.style.display = "inline-block";
 }
-
 
 
 let prices = [];

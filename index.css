@@ -125,7 +125,7 @@ header ul li img{
 
 }
 
-.genreNav li.active{
+.genreNav li.active,.genreNav li:hover{
   color: #FFF;
   font-weight: bold;
 }
