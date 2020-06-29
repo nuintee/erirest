@@ -122,20 +122,30 @@ header ul li img{
   display: inline-block;
   margin: 0 20px;
   cursor: pointer;
-
 }
 
-.genreNav li.active,.genreNav li:hover{
-  color: #FFF;
-  font-weight: bold;
+.genreNav ul li a{
+  color:#AFAFAF;
+  text-decoration: none;
 }
 
-.contents{
+.genreNav ul li.active a,.genreNav ul li ruby.active a{
+  color:#FFF;
+}
+
+
+
+
+.tab-panels{
+  display: none;
+}
+
+.tab-panels.active{
+  display: block;
   width: 100%;
-  display: inline-block;
   text-align: left;
   position: relative;
-  top: 10vh;
+  top: 3vh;
 }
 
 .meal-item{
@@ -245,6 +255,14 @@ header ul li img{
 
 #bar p {
   font-size: 2vh;
+}
+
+.index{
+  display: none;
+}
+
+.index.active{
+  display: block;
 }
 
 /** @keyframes slide-up-anim {

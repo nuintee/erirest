@@ -11,23 +11,6 @@ function slideup(){
   }
 }
 
-function tabSelection(x){
-
-  let idx1 = document.getElementById('index-1');
-  let idx2 = document.getElementById('index-2');
-  let idx3 = document.getElementById('index-3');
-  let idx4 = document.getElementById('index-4');
-  let idx5 = document.getElementById('index-5');
-  let idx6 = document.getElementById('index-6');
-
-  let idxs = [idx1,idx2,idx3,idx4,idx5,idx6];
-
-
-
-  idx1.style.display = "inline-block";
-}
-
-
 let prices = [];
 
 function atc(button){
@@ -55,10 +38,10 @@ function atc(button){
   console.log(itemPrice);
   console.log(itemsInCart);
 
-  let sum = 0;
+  //let sum = 0;
 
-  for (var i = 0; i < prices.length; i++) {
-    sum += prices[i];
+  for (let i = 0; i < prices.length; i++) {
+  let sum = itemPrice;
   }
 
   console.log(sum);
@@ -66,11 +49,30 @@ function atc(button){
  let priceVal = document.getElementById('priceVal');
  priceVal.innerHTML=sum;
 
-
+//Deletion
   newDel.addEventListener("click",function(){
-
+    let del = this.getAttribute("value");
     this.closest("div").remove();
+    sum -= itemPrice;
+    priceVal.innerHTML = sum;
   },false);
 
 
 }
+
+function onTabClick(event){
+  let activeTabs = document.querySelectorAll(".active");
+
+for(let i = 0; i < activeTabs.length; i++){
+  activeTabs[i].className =  activeTabs[i].className.replace('active','');
+}
+
+//console.log(event.target.parentElement);
+event.target.parentElement.className += " active";
+//console.log(event.target.href.split('#')[1]);
+document.getElementById(event.target.href.split('#')[1]).className += ' active';
+}
+
+const element = document.getElementById("nav-tab");
+
+element.addEventListener("click",onTabClick,false);
